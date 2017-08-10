@@ -19,7 +19,7 @@
 var link = document.getElementById('category');
 var input = document.getElementById('categoryTerm');
 input.onchange=input.onkeyup= function() {
-	link.categoryId=encodeURIComponent(input.value);
+	link.categoryId=''+encodeURIComponent(input.value);
 	link.firstChild.data=link.href;
 };
 		</script>
